@@ -46,10 +46,7 @@ pip install python-okx --upgrade
 
 请将 `your_api_key_here`、`your_secret_key_here` 和 `your_passphrase_here` 替换为您在 OKX 获取的实际 API 密钥、秘密和密码短语。
 
-## 日志文件
-日志文件 trading_bot.log 会在程序运行时自动生成，记录所有操作和错误信息。
-
-# 使用方法
+## 使用方法
 
 1. 克隆项目
 将项目克隆到本地：
@@ -65,10 +62,10 @@ cd okx_trading_bot
 python main.py
 ```
 
-# 克隆项目
+## 克隆项目
 将项目克隆到本地：
 
-# 策略说明
+## 策略说明
 机器人实现了简单的移动平均线交叉策略：
 
 - 买入信号：短期均线从下方穿过长期均线。
@@ -80,7 +77,7 @@ python main.py
 - 长期均线窗口：20
 您可以通过修改 `main.py` 中的 moving_average_crossover 函数调整这些参数。
 
-# 注意事项
+## 注意事项
 1. 风险提示
 本项目仅供学习和研究使用，实际交易可能存在风险，请谨慎操作。
 
@@ -94,8 +91,8 @@ python main.py
 3. 测试环境
 默认情况下，机器人运行在模拟交易环境（flag="1"）。如果需要切换到真实交易环境，请将 flag 设置为 "0"。
 
-# 日志示例
-以下是日志文件 trading_bot.log 的示例内容：
+## 日志示例
+日志文件 `trading_bot.log` 会在程序运行时自动生成，记录所有操作和错误信息。以下是日志文件 `trading_bot.log` 的示例内容：
 
 ```
 2025-05-17 12:00:00,123 - INFO - 交易机器人启动
@@ -107,8 +104,8 @@ python main.py
 2025-05-17 12:00:05,901 - INFO - 币种: USDT, 可用余额: 1000.0
 ```
 
-# 贡献
+## 贡献
 欢迎提交问题（Issues）或贡献代码（Pull Requests）来改进此项目。
 
-# 许可证
+## 许可证
 本项目采用 MIT 许可证。
