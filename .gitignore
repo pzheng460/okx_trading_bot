@@ -3,3 +3,5 @@ api_key.json
 trading_bot.log
 
 .vscode/
+__pycache__/
+*.pyc
