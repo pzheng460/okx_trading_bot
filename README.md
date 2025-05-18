@@ -11,7 +11,57 @@
 - **日志记录**：所有操作和错误信息都会记录到日志文件中。
 
 ## 文件结构
-TBD
+```
+├── README.md
+├── main.py
+├── okx_market_maker
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   └── __init__.cpython-311.pyc
+│   ├── config
+│   │   ├── __pycache__
+│   │   ├── api_key.json
+│   │   ├── api_key_demo.json
+│   │   ├── params.yaml
+│   │   └── settings.py
+│   ├── market_data_service
+│   │   ├── RESTMarketDataService.py
+│   │   ├── WssMarketDataService.py
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   └── model
+│   ├── order_management_service
+│   │   ├── WssOrderManagementService.py
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   └── model
+│   ├── position_management_service
+│   │   ├── WssPositionManagementService.py
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   └── model
+│   ├── strategy
+│   │   ├── BaseStrategy.py
+│   │   ├── SampleMM.py
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   ├── model
+│   │   ├── params
+│   │   └── risk
+│   ├── tests
+│   │   ├── __init__.py
+│   │   └── test_strategy.py
+│   └── utils
+│       ├── InstrumentUtil.py
+│       ├── OkxEnum.py
+│       ├── TdModeUtil.py
+│       ├── WsOrderUtil.py
+│       ├── __init__.py
+│       └── __pycache__
+├── requirements.txt
+├── test.py
+└── trading_bot.log
+```
 
 ## 环境依赖
 
@@ -108,4 +158,5 @@ python main.py
 欢迎提交问题（Issues）或贡献代码（Pull Requests）来改进此项目。
 
 ## 许可证
-本项目采用 MIT 许可证。
+本项目采用 MIT 许可证。.
+
